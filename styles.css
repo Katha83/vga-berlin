@@ -606,8 +606,7 @@ body.cursor-hover #cursor-ring { width: 56px;  height: 56px;  border-color: var(
     border-color .4s,
     transform    .45s var(--ease),
     background   .4s;
-  opacity: 0;
-  transform: translateY(40px);
+  transform: translateY(0);
 }
 .benefit-card::before {
   content: '';
@@ -829,8 +828,7 @@ body.cursor-hover #cursor-ring { width: 56px;  height: 56px;  border-color: var(
   transition:
     border-color .4s,
     transform    .45s var(--ease);
-  opacity: 0;
-  transform: translateY(40px);
+  transform: translateY(0);
 }
 .team-card::after {
   content: '';

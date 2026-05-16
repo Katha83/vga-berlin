@@ -328,12 +328,12 @@ function initScrollAnimations() {
   });
 
   // ── Benefit cards stagger ──
-  gsap.to('.benefit-card', {
+  gsap.from('.benefit-card', {
     scrollTrigger: {
       trigger: '.benefit-grid',
       start: 'top 85%'
     },
-    opacity: 1, y: 0,
+    opacity: 0, y: 40,
     duration: .85, ease: 'power3.out',
     stagger: { amount: .5, from: 'start' }
   });
@@ -344,25 +344,25 @@ function initScrollAnimations() {
     x: -50, opacity: 0,
     duration: 1.1, ease: 'power4.out'
   });
-  gsap.to('.event-card-sm', {
+  gsap.from('.event-card-sm', {
     scrollTrigger: { trigger: '.events-side', start: 'top 85%' },
-    opacity: 1, y: 0,
+    opacity: 0, y: 20,
     duration: .8, ease: 'power3.out',
     stagger: .12
   });
 
   // ── Team cards ──
-  gsap.to('.team-card', {
+  gsap.from('.team-card', {
     scrollTrigger: { trigger: '.team-grid', start: 'top 85%' },
-    opacity: 1, y: 0,
+    opacity: 0, y: 40,
     duration: .85, ease: 'power3.out',
     stagger: .15
   });
 
   // ── Contact form ──
-  gsap.to('.form-wrap', {
+  gsap.from('.form-wrap', {
     scrollTrigger: { trigger: '.form-wrap', start: 'top 85%' },
-    opacity: 1, y: 0,
+    opacity: 0, y: 30,
     duration: 1, ease: 'power3.out'
   });
 
@@ -485,6 +485,7 @@ function initMain() {
   initCardGlow();
   initContactForm();
   initSectionTags();
+  ScrollTrigger.refresh();
 }
 
 /* ============================================================
