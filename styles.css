@@ -201,6 +201,9 @@ body.cursor-hover #cursor-ring { width: 56px;  height: 56px;  border-color: var(
   display: flex;
   align-items: center;
   overflow: hidden;
+  background-image: url('VGA Page/Bilder Vorstand/istockphoto-953782406-2048x2048.jpg');
+  background-size: cover;
+  background-position: center center;
 }
 #particle-canvas {
   position: absolute;
@@ -212,8 +215,9 @@ body.cursor-hover #cursor-ring { width: 56px;  height: 56px;  border-color: var(
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 80% 55% at 50% 100%, rgba(201,169,110,.07) 0%, transparent 68%),
-    radial-gradient(ellipse 50% 40% at 20% 15%, rgba(74,158,255,.04) 0%, transparent 65%);
+    linear-gradient(to bottom, rgba(8,10,14,.72) 0%, rgba(8,10,14,.55) 50%, rgba(8,10,14,.80) 100%),
+    radial-gradient(ellipse 80% 55% at 50% 100%, rgba(201,169,110,.10) 0%, transparent 68%),
+    radial-gradient(ellipse 50% 40% at 20% 15%, rgba(74,158,255,.05) 0%, transparent 65%);
   pointer-events: none;
 }
 .hero-content {
