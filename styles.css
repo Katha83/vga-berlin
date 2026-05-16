@@ -196,8 +196,8 @@ body.cursor-hover #cursor-ring { width: 56px;  height: 56px;  border-color: var(
 /* ── Hero ── */
 #hero {
   position: relative;
-  height: 100vh;
-  min-height: 700px;
+  height: 78vh;
+  min-height: 560px;
   display: flex;
   align-items: center;
   overflow: hidden;
