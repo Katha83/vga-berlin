@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assekuranzclub Berlin &amp; Ostdeutschland | VGA</title>
+  <meta name="description" content="Das Netzwerk für Führungskräfte der Versicherungswirtschaft in Berlin und den ostdeutschen Bundesländern – regionale Bezirksgruppe des VGA Bundesverbands.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ── Custom Cursor ── -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- ── Preloader ── -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-vga">VGA</div>
+      <div class="preloader-sub">Assekuranzclub Berlin &amp; Ostdeutschland</div>
+      <div class="preloader-bar-wrap">
+        <div class="preloader-bar" id="pl-bar"></div>
+      </div>
+      <div class="preloader-pct" id="pl-pct">0%</div>
+    </div>
+  </div>
+
+  <!-- ── Navigation ── -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">
+      <span class="logo-vga">Assekuranzclub</span>
+      <span class="logo-region">Berlin &amp; Ostdeutschland</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">Über uns</a></li>
+      <li><a href="#netzwerk">Netzwerk</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#vorstand">Vorstand</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+    <a href="#kontakt" class="nav-cta">Mitglied werden</a>
+  </nav>
+
+  <!-- ── Hero ── -->
+  <section id="hero">
+    <canvas id="particle-canvas"></canvas>
+    <div class="hero-gradient"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="eyebrow-line"></span>
+        <span>Bundesverband der Assekuranzführungskräfte e.V.</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="line"><span class="line-inner">Assekuranz</span></span>
+        <span class="line"><span class="line-inner gold-text italic">club Berlin</span></span>
+        <span class="line"><span class="line-inner">&amp; Ostdeutschland</span></span>
+      </h1>
+      <p class="hero-subtitle">
+        Das exklusive Netzwerk für Führungskräfte der Versicherungswirtschaft in Berlin und den ostdeutschen Bundesländern.
+      </p>
+      <div class="hero-ctas">
+        <a href="#netzwerk" class="btn-primary"><span>Netzwerk entdecken</span></a>
+        <a href="#events" class="btn-secondary">Nächstes Event &rarr;</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number" id="stat1">0</span>
+          <span class="stat-label">Bundesweite Mitglieder</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" id="stat2">0</span>
+          <span class="stat-label">Regionale Bezirksgruppen</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" id="stat3">0</span>
+          <span class="stat-label">Events &amp; Seminare p.a.</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span class="scroll-text">Scroll</span>
+    </div>
+  </section>
+
+  <!-- ── Marquee ── -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <span class="marquee-item">Netzwerk <span class="m-dot"></span></span>
+      <span class="marquee-item">Führung <span class="m-dot"></span></span>
+      <span class="marquee-item">Innovation <span class="m-dot"></span></span>
+      <span class="marquee-item">Versicherung <span class="m-dot"></span></span>
+      <span class="marquee-item">Expertise <span class="m-dot"></span></span>
+      <span class="marquee-item">Community <span class="m-dot"></span></span>
+      <span class="marquee-item">Assekuranz <span class="m-dot"></span></span>
+      <span class="marquee-item">Weiterbildung <span class="m-dot"></span></span>
+      <span class="marquee-item">Führungskräfte <span class="m-dot"></span></span>
+      <span class="marquee-item">Berlin &amp; Ostdeutschland <span class="m-dot"></span></span>
+      <!-- duplicate for seamless loop -->
+      <span class="marquee-item">Netzwerk <span class="m-dot"></span></span>
+      <span class="marquee-item">Führung <span class="m-dot"></span></span>
+      <span class="marquee-item">Innovation <span class="m-dot"></span></span>
+      <span class="marquee-item">Versicherung <span class="m-dot"></span></span>
+      <span class="marquee-item">Expertise <span class="m-dot"></span></span>
+      <span class="marquee-item">Community <span class="m-dot"></span></span>
+      <span class="marquee-item">Assekuranz <span class="m-dot"></span></span>
+      <span class="marquee-item">Weiterbildung <span class="m-dot"></span></span>
+      <span class="marquee-item">Führungskräfte <span class="m-dot"></span></span>
+      <span class="marquee-item">Berlin &amp; Ostdeutschland <span class="m-dot"></span></span>
+    </div>
+  </div>
+
+  <!-- ── About ── -->
+  <section id="about">
+    <div class="section about-wrap">
+      <!-- Visual / Left -->
+      <div class="about-visual">
+        <div class="about-card-main">
+          <div class="about-vga-big">VGA</div>
+          <div class="about-tagline">&ldquo;Wir. Steuern. Führung.&rdquo;</div>
+          <div class="about-sub-tagline">Bundesverband der Assekuranzführungskräfte</div>
+        </div>
+        <div class="about-badge">
+          <span class="b-year">VGA</span>
+          <span>Ihr Netz&shy;werk</span>
+        </div>
+      </div>
+      <!-- Text / Right -->
+      <div class="about-text">
+        <div class="section-tag">Über Uns</div>
+        <h2 class="section-title">Vernetzt.<br><em class="gold-text">Stark.</em> Regional.</h2>
+        <p class="section-subtitle">
+          Der Assekuranzclub Berlin &amp; Ostdeutschland ist die aktive regionale Gemeinschaft des VGA – für Entscheider und Gestalter der Versicherungswirtschaft in Berlin, Leipzig, Dresden und darüber hinaus.
+        </p>
+        <ul class="about-list">
+          <li>Regelmäßige Netzwerktreffen in Berlin, Leipzig und Dresden</li>
+          <li>Austausch zu aktuellen Branchenthemen und Regulierungsfragen</li>
+          <li>Zugang zu bundesweiten VGA-Seminaren und PAWLIK-Führungskräftetrainings</li>
+          <li>Verbandsarbeit auf Bundes- und Landesebene – Ihre Stimme in der Politik</li>
+          <li>Engagement für Nachwuchsführungskräfte und Chancengleichheit</li>
+        </ul>
+        <div class="about-cta">
+          <a href="#kontakt" class="btn-primary"><span>Jetzt Mitglied werden</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Netzwerk / Benefits ── -->
+  <section id="netzwerk">
+    <div class="netzwerk-wrap">
+      <div class="netzwerk-header">
+        <div>
+          <div class="section-tag">Ihr Mehrwert</div>
+          <h2 class="section-title">Was bieten<br>wir <em class="gold-text">Ihnen?</em></h2>
+        </div>
+        <p class="section-subtitle">
+          Als Mitglied profitieren Sie von einem einzigartigen Ökosystem aus Wissen, Kontakten und gemeinsamer Interessenvertretung – auf drei Ebenen, die Ihre Karriere und Ihren Alltag stärken.
+        </p>
+      </div>
+      <div class="benefit-grid benefit-grid--categories">
+
+        <div class="benefit-card benefit-card--category">
+          <div class="benefit-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <div class="benefit-title">Für Ihre persönliche Karriere</div>
+          <ul class="benefit-list">
+            <li>Einziges Führungskräftenetzwerk der Branche – regional und bundesweit</li>
+            <li>Plattform für Erfahrungs- und Gedankenaustausch</li>
+            <li>Aktuelle Informationen über Veränderungen in der Versicherungswirtschaft</li>
+            <li>Kontakte zu renommierten Referenten aus der Branche</li>
+            <li>Regionale Organisationsverbindungen vor Ort</li>
+            <li>Verbandszeitschrift <em>VGA Nachrichten</em></li>
+            <li>Unternehmensunabhängige Informationsquellen zu allen Branchenthemen</li>
+            <li>Tarifvertrag für Vermittlerbetriebe</li>
+          </ul>
+        </div>
+
+        <div class="benefit-card benefit-card--category">
+          <div class="benefit-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <div class="benefit-title">Für Ihre tägliche Praxis</div>
+          <ul class="benefit-list">
+            <li>Direkte Kontakte zu Versicherern und deren Vorständen</li>
+            <li>Kollegialer Austausch auch mit Führungskräften des Mitbewerbs</li>
+            <li>Management- und Führungsunterstützung</li>
+            <li>Berufliche Orientierungsberatung &amp; Coaching</li>
+            <li>Individuelle Qualitäts- und Karriereförderung</li>
+          </ul>
+        </div>
+
+        <div class="benefit-card benefit-card--category">
+          <div class="benefit-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+            </svg>
+          </div>
+          <div class="benefit-title">Für Sie als Führungskraft</div>
+          <ul class="benefit-list">
+            <li>Interessenvertretung gegenüber Wirtschaft, Politik und Öffentlichkeit</li>
+            <li>Aktive Mitarbeit in den wichtigsten Gremien der Versicherungswirtschaft</li>
+            <li>Bezug des Nachrichtenmagazins <em>FOCUS</em> ohne zusätzliche Kosten</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Events ── -->
+  <section id="events">
+    <div class="section">
+      <div class="events-header">
+        <div>
+          <div class="section-tag">Veranstaltungen</div>
+          <h2 class="section-title">Kommende Events</h2>
+        </div>
+        <a href="https://www.vga-koeln.de" target="_blank" rel="noopener" class="btn-secondary">Alle Veranstaltungen &rarr;</a>
+      </div>
+      <div class="events-grid">
+
+        <!-- Featured Event -->
+        <div class="event-featured">
+          <div class="event-date-bg">16</div>
+          <span class="event-badge">Highlight 2026</span>
+          <h3 class="event-title-big">Tag der Versicherungswirtschaft</h3>
+          <div class="event-meta">
+            <span class="event-meta-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              16. März 2026
+            </span>
+            <span class="event-meta-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Berlin
+            </span>
+          </div>
+          <a href="#kontakt" class="btn-primary"><span>Jetzt anmelden</span></a>
+        </div>
+
+        <!-- Side events -->
+        <div class="events-side">
+          <div class="event-card-sm">
+            <div class="event-card-date">20. Mai 2026</div>
+            <div class="event-card-title">VersicherungsVermittlerTag</div>
+            <div class="event-card-loc">&#128205; Bundesweite Veranstaltung</div>
+          </div>
+          <div class="event-card-sm">
+            <div class="event-card-date">28.–29. Mai 2026</div>
+            <div class="event-card-title">Jahreshauptversammlung VGA</div>
+            <div class="event-card-loc">&#128205; Wuppertal</div>
+          </div>
+          <div class="event-card-sm">
+            <div class="event-card-date">29. Juni 2026</div>
+            <div class="event-card-title">Stuttgarter Versicherungstag</div>
+            <div class="event-card-loc">&#128205; Stuttgart</div>
+          </div>
+          <div class="event-card-sm more">
+            <div>
+              <p>Weitere regionale Netzwerktreffen</p>
+              <a href="https://www.vga-koeln.de" target="_blank" rel="noopener">Zum Veranstaltungskalender &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Vorstand / Team ── -->
+  <section id="vorstand">
+    <div class="section">
+      <div class="section-tag">Vorstand &amp; Ansprechpartner</div>
+      <h2 class="section-title">Ihr Team vor Ort</h2>
+      <p class="section-subtitle">Unsere ehrenamtlichen Ansprechpartner stehen Ihnen in der gesamten Region gerne zur Verfügung.</p>
+      <div class="team-grid">
+
+        <div class="team-card">
+          <div class="team-avatar">
+            <img src="VGA Page/Bilder Vorstand/Tombusch-Katharina-130.jpg" alt="Katharina Tombusch">
+          </div>
+          <div class="team-role-tag">Vorsitzende</div>
+          <div class="team-name">Katharina Tombusch</div>
+          <div class="team-company">Prokuristin / Leiterin Maklerdirektion Nord<br>Versicherungskammer Bayern</div>
+          <div class="team-contacts">
+            <a href="tel:+4916093022105">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.35 2 2 0 0 1 3.57 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              0160 / 93022105
+            </a>
+            <a href="mailto:berlinostdeutschland@vga-koeln.de">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              berlinostdeutschland@vga-koeln.de
+            </a>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">
+            <img src="VGA Page/Bilder Vorstand/Eberhard-Stellbrink-1.jpg" alt="Eberhard Stellbrink">
+          </div>
+          <div class="team-role-tag">Ansprechpartner Berlin</div>
+          <div class="team-name">Eberhard Stellbrink</div>
+          <div class="team-company">Buhrowstraße 20 B<br>12167 Berlin</div>
+          <div class="team-contacts">
+            <a href="tel:+493070769773">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.35 2 2 0 0 1 3.57 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              030 / 70769773
+            </a>
+            <a href="tel:+4915119437699">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+              0151 / 19437699
+            </a>
+            <a href="mailto:berlin@vga-koeln.de">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              berlin@vga-koeln.de
+            </a>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">
+            <img src="VGA Page/Bilder Vorstand/Heiko-Zabel.jpg" alt="Heiko Zabel">
+          </div>
+          <div class="team-role-tag">Schatzmeister</div>
+          <div class="team-name">Heiko Zabel</div>
+          <div class="team-company">Gebietsdirektor · SIGNAL IDUNA Gruppe<br>Gebietsdirektion Dresden<br>Antonstr. 39, 01097 Dresden</div>
+          <div class="team-contacts">
+            <a href="tel:+493413198552">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.35 2 2 0 0 1 3.57 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              0341 / 319 855 20
+            </a>
+            <a href="mailto:heiko.zabel@signal-iduna.de">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              heiko.zabel@signal-iduna.de
+            </a>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">
+            <img src="VGA Page/Bilder Vorstand/Fiedler-Matthias-130.jpg" alt="Matthias Fiedler">
+          </div>
+          <div class="team-role-tag">Ansprechpartner Leipzig</div>
+          <div class="team-name">Matthias Fiedler</div>
+          <div class="team-company">Leitung Vertriebsunterstützung / Prozesse / Telefonie<br>Consal Versicherungsdienste GmbH<br>Querstraße 18, 04103 Leipzig</div>
+          <div class="team-contacts">
+            <a href="tel:+4934155000106">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.35 2 2 0 0 1 3.57 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              0341 / 55 00 01 06
+            </a>
+            <a href="mailto:leipzig@vga-koeln.de">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              leipzig@vga-koeln.de
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Kontakt ── -->
+  <section id="kontakt">
+    <div class="kontakt-wrap">
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <div class="section-tag">Kontakt</div>
+        <h2 class="section-title">Werden Sie<br>Teil des<br><em class="gold-text">Netzwerks</em></h2>
+        <p class="section-subtitle">
+          Ob Mitgliedsanfrage, Fragen zu Events oder allgemeine Informationen – wir freuen uns auf Ihre Nachricht.
+        </p>
+
+        <div class="contact-block">
+          <div class="contact-icon">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.35 2 2 0 0 1 3.57 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div>
+            <div class="contact-label">Vorsitzende</div>
+            <div class="contact-value">Katharina Tombusch</div>
+            <div class="contact-value-sub">0160 / 93022105</div>
+          </div>
+        </div>
+
+        <div class="contact-block">
+          <div class="contact-icon">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <div class="contact-label">Bundesgeschäftsstelle</div>
+            <div class="contact-value">Peterstraße 23-25, 50676 Köln</div>
+            <div class="contact-value-sub">Tel.: 0221 / 9 52 12 80</div>
+          </div>
+        </div>
+
+        <div class="contact-block">
+          <div class="contact-icon">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+          </div>
+          <div>
+            <div class="contact-label">Website</div>
+            <div class="contact-value">
+              <a href="https://www.vga-koeln.de" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:underline;text-underline-offset:3px">www.vga-koeln.de</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="form-wrap">
+        <div class="form-title">Nachricht senden</div>
+        <form id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="f-fname">Vorname</label>
+              <input type="text" id="f-fname" placeholder="Max" autocomplete="given-name">
+            </div>
+            <div class="form-group">
+              <label for="f-lname">Nachname</label>
+              <input type="text" id="f-lname" placeholder="Mustermann" autocomplete="family-name">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="f-email">E-Mail-Adresse</label>
+            <input type="email" id="f-email" placeholder="max@beispiel.de" autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label for="f-company">Unternehmen</label>
+            <input type="text" id="f-company" placeholder="Ihr Unternehmen" autocomplete="organization">
+          </div>
+          <div class="form-group">
+            <label for="f-subject">Betreff</label>
+            <select id="f-subject">
+              <option value="">Bitte wählen …</option>
+              <option value="mitglied">Mitgliedschaft anfragen</option>
+              <option value="event">Event-Information</option>
+              <option value="anfrage">Allgemeine Anfrage</option>
+              <option value="sonstiges">Sonstiges</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="f-message">Ihre Nachricht</label>
+            <textarea id="f-message" placeholder="Schreiben Sie uns …"></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-submit"><span>Nachricht absenden &rarr;</span></button>
+          <p class="form-note">Ihre Daten werden vertraulich behandelt und nicht an Dritte weitergegeben.</p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo-vga">Assekuranzclub</span>
+          <span class="logo-region">Berlin &amp; Ostdeutschland</span>
+          <p class="footer-desc">
+            Regionale Bezirksgruppe des Bundesverbands der Assekuranzführungskräfte e.V. – das Netzwerk für Führungskräfte der Versicherungswirtschaft.
+          </p>
+        </div>
+        <div>
+          <div class="footer-col-title">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="#about">Über uns</a></li>
+            <li><a href="#netzwerk">Netzwerk</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#vorstand">Vorstand</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Angebote</div>
+          <ul class="footer-links">
+            <li><a href="https://www.vga-koeln.de" target="_blank" rel="noopener">VGA-Seminare</a></li>
+            <li><a href="https://www.vga-koeln.de" target="_blank" rel="noopener">Podcast Plattform AO</a></li>
+            <li><a href="https://www.vga-koeln.de" target="_blank" rel="noopener">Frauen &amp; Führung</a></li>
+            <li><a href="https://www.vga-koeln.de" target="_blank" rel="noopener">Forschungsprojekt KIM</a></li>
+            <li><a href="https://www.vga-koeln.de" target="_blank" rel="noopener">Initiative gut beraten</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Kontakt</div>
+          <ul class="footer-links">
+            <li><a href="tel:+4916093022105">0160 / 93022105</a></li>
+            <li><a href="tel:+4922195212800">0221 / 9 52 12 80</a></li>
+            <li><a href="https://www.vga-koeln.de" target="_blank" rel="noopener">vga-koeln.de</a></li>
+            <li><a href="https://www.linkedin.com/company/vga-bundesverband" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://www.facebook.com/VGAKoeln" target="_blank" rel="noopener">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Assekuranzclub Berlin &amp; Ostdeutschland | VGA e.V.</span>
+        <div class="footer-bottom-links">
+          <a href="https://www.vga-koeln.de/index.php?id=impressum" target="_blank" rel="noopener">Impressum</a>
+          <a href="https://www.vga-koeln.de/index.php?id=datenschutz" target="_blank" rel="noopener">Datenschutz</a>
+          <a href="https://www.vga-koeln.de" target="_blank" rel="noopener">Bundesverband</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── CDN: GSAP + ScrollTrigger + Lenis ── -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.45/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
